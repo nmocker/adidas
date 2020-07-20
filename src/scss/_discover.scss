@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body,
+html {
+  height: 100vh;
+  width: 100%;
+  @media screen and (min-width: 1024px) {
+    background-color: #631723;
+  }
+}
+
+header {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 100%;
+  height: 72px;
+
+  background-color: #fff;
+  @media screen and (min-width: 1024px) {
+    justify-content: start;
+  }
+
+  .logo {
+    position: relative;
+    img {
+      width: 75px;
+      padding: 10px 0;
+      @media screen and (min-width: 1024px) {
+        position: absolute;
+        left: 15px;
+      }
+    }
+  }
+
+  .search-cart {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    position: absolute;
+    cursor: pointer;
+    left: 15px;
+    top: 13px;
+
+    img {
+      width: 50px;
+    }
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    nav {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  ul {
+    display: none;
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      display: flex;
+      left: 150px;
+
+      li a {
+        color: #333;
+        padding-right: 25px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.search-cart {
+  display: none;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 15px;
+    top: 22px;
+
+    .search-field {
+      padding-right: 25px;
+    }
+
+    .search-btn img {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    .shopping-cart img {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+  }
+}
+
+.ivypark-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 600px;
+  background-color: #631723;
+
+  p {
+    color: #fff;
+    font-size: 1.5625rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    padding: 50px 0;
+  }
+
+  .adidas-logo-orange {
+    width: 95px;
+    margin: 30px 0;
+  }
+
+  .adidas-bars {
+    background-color: #ff5c3a;
+  }
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+
+  background-color: #fff;
+  width: 415px;
+  margin: 0 auto 30px;
+  @media screen and (min-width: 1024px) {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  h1 {
+    font-size: 1.625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  span {
+    padding: 20px 0;
+    font-weight: 300;
+  }
+
+  .email-input {
+    padding: 30px 0;
+  }
+
+  .age-span {
+    color: #631723;
+  }
+
+  .gender-field {
+    padding: 30px 0;
+  }
+
+  .submit-btn {
+    width: 300px;
+    margin-top: 25px;
+    padding: 15px;
+    cursor: pointer;
+
+    background-color: #000;
+
+    a {
+      font-size: 1.125rem;
+      color: #fff;
+    }
+
+    .submit-link {
+      font-size: 1.875rem;
+      padding-left: 20px;
+    }
+  }
+}

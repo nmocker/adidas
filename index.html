@@ -21,16 +21,15 @@
   <body>
     <header>
       <div class="logo">
-        <img src="/dist/img/adidas-logo.png" alt="adidas logo" />
+        <a href="index.html"
+          ><img src="/dist/img/adidas-logo.png" alt="adidas logo"
+        /></a>
       </div>
 
-      <div class="hamburger-menu">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-
-      <nav>
+      <nav class="flex-nav">
+        <div class="hamburger-menu">
+          <img src="dist/img/hamburger.png" alt="Menu icon" />
+        </div>
         <ul>
           <li><a href="#">Men</a></li>
           <li><a href="#">Women</a></li>
@@ -38,15 +37,16 @@
           <li><a href="#">Sports</a></li>
         </ul>
       </nav>
+
       <div class="search-cart">
-        <div class="search-value">
-          <input type="text" name="" placeholder="Search" />
+        <div class="search-field">
           <a class="search-btn"
-            ><img src="dist/img/icon-magnifying-glass.svg"
+            ><img src="dist/img/icon-magnifying-glass.svg" alt="Search icon"
           /></a>
         </div>
+
         <div class="shopping-cart">
-          <img src="dist/img/icon-shopping-cart.svg" />
+          <img src="dist/img/icon-shopping-cart.svg" alt="Shopping cart" />
         </div>
       </div>
     </header>
@@ -60,7 +60,9 @@
             staple with utilitarian swag and attitude.
           </p>
           <div class="info-btns">
-            <button class="discover-btn">Discover</button>
+            <button class="discover-btn">
+              <a href="discover.html">Discover</a>
+            </button>
             <button class="buy-btn">Add to Cart</button>
           </div>
         </div>
