@@ -181,7 +181,7 @@ header .search-cart {
 }
 
 header .hamburger-menu {
-	position: absolute;
+	position: relative;
 	cursor: pointer;
 	left: 15px;
 	top: 13px;
@@ -197,8 +197,39 @@ header .hamburger-menu img {
 	}
 }
 
+header .flex-nav {
+	position: relative;
+}
+
+header .flex-nav.showing {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	z-index: 2;
+	width: 300px;
+	height: 300px;
+	left: 0;
+	top: 70px;
+	background: #fff;
+}
+
+header .flex-nav.showing .hamburger-nav {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+header .flex-nav.showing li {
+	padding: 20px 0;
+}
+
+header .flex-nav.showing li a {
+	color: #333;
+	font-size: 1.5rem;
+}
+
 @media screen and (min-width: 1024px) {
-	header nav {
+	header .flex-nav {
 		position: relative;
 		display: flex;
 		align-items: center;
@@ -247,6 +278,18 @@ header ul {
 		height: 25px;
 		cursor: pointer;
 	}
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 0;
+	background-color: #333;
+}
+
+footer span {
+	color: #fff;
 }
 
 .main {
@@ -374,16 +417,13 @@ header ul {
 	}
 }
 
-footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 30px 0;
-	background-color: #333;
-}
-
-footer span {
-	color: #fff;
+.neo {
+	background-color: #000;
+	height: 100vh;
+	width: 100%;
+	background-image: url("../img/mens-neo.jpg");
+	background-size: cover;
+	background-position: right;
 }
 
 * {
@@ -395,13 +435,6 @@ body,
 html {
 	height: 100vh;
 	width: 100%;
-}
-
-@media screen and (min-width: 1024px) {
-	body,
-	html {
-		background-color: #631723;
-	}
 }
 
 header {

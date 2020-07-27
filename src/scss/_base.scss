@@ -3,8 +3,9 @@
   text-decoration: none;
 }
 
-body,
-html {
+html,
+body {
+  font-family: "Roboto", sans-serif;
   height: 100vh;
   width: 100%;
 }
@@ -18,8 +19,6 @@ header {
 
   width: 100%;
   height: 72px;
-
-  background-color: #fff;
   @media screen and (min-width: 1024px) {
     justify-content: start;
   }
@@ -41,7 +40,8 @@ header {
   }
 
   .hamburger-menu {
-    position: absolute;
+    // position: absolute;
+    position: relative;
     cursor: pointer;
     left: 15px;
     top: 13px;
@@ -49,13 +49,46 @@ header {
     img {
       width: 50px;
     }
+
     @media screen and (min-width: 1024px) {
       display: none;
     }
   }
 
+  .flex-nav {
+    position: relative;
+    // display: flex;
+
+    &.showing {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      z-index: 2;
+      width: 300px;
+      height: 300px;
+      left: 0;
+      top: 70px;
+      background: #fff;
+
+      .hamburger-nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+
+      li {
+        padding: 20px 0;
+      }
+
+      li a {
+        color: #333;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
   @media screen and (min-width: 1024px) {
-    nav {
+    .flex-nav {
       position: relative;
       display: flex;
       align-items: center;
@@ -105,84 +138,15 @@ header {
   }
 }
 
-.ivypark-hero {
+footer {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 30px 0;
 
-  height: 600px;
-  background-color: #631723;
-
-  p {
-    color: #fff;
-    font-size: 1.5625rem;
-    font-weight: 500;
-    text-transform: uppercase;
-
-    padding: 50px 0;
-  }
-
-  .adidas-logo-orange {
-    width: 95px;
-    margin: 30px 0;
-  }
-
-  .adidas-bars {
-    background-color: #ff5c3a;
-  }
-}
-
-.signup-form {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-
-  background-color: #fff;
-  width: 415px;
-  margin: 0 auto 30px;
-  @media screen and (min-width: 1024px) {
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  }
-
-  h1 {
-    font-size: 1.625rem;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
+  background-color: #333;
 
   span {
-    padding: 20px 0;
-    font-weight: 300;
-  }
-
-  .email-input {
-    padding: 30px 0;
-  }
-
-  .age-span {
-    color: #631723;
-  }
-
-  .gender-field {
-    padding: 30px 0;
-  }
-
-  .submit-btn {
-    width: 300px;
-    margin-top: 25px;
-    padding: 15px;
-    cursor: pointer;
-
-    background-color: #000;
-
-    a {
-      font-size: 1.125rem;
-      color: #fff;
-    }
-
-    .submit-link {
-      font-size: 1.875rem;
-      padding-left: 20px;
-    }
+    color: #fff;
   }
 }

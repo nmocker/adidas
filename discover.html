@@ -28,7 +28,7 @@
           <img src="dist/img/hamburger.png" alt="Menu icon" />
         </div>
         <ul>
-          <li><a href="#">Men</a></li>
+          <li><a href="mens.html">Men</a></li>
           <li><a href="#">Women</a></li>
           <li><a href="#">Kids</a></li>
           <li><a href="#">Sports</a></li>
@@ -52,23 +52,12 @@
 
     <section class="ivypark-hero">
       <p>The collection is sold out 🐝🐝</p>
-      <div class="adidas-bars">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
 
       <img
         class="beyonce-img"
         src="dist/img/beyonce-shoe.jpg"
         alt="Beyonce wears her adidas Ivy Park shoes"
       />
-
-      <div class="adidas-bars2">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
 
       <img
         class="adidas-logo-orange"
@@ -77,69 +66,77 @@
       />
     </section>
 
-    <section class="signup-form">
+    <form class="signup-form">
       <h1>Adidas x Ivy Park</h1>
       <span>Sign up, stay in the flow.</span>
-      <div class="name-input">
-        <label for="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          placeholder="name"
-          required
-          aria-required="true"
-        />
-      </div>
+      <form class="name-input">
+        <div>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="name"
+            required
+            aria-required="true"
+          />
+        </div>
+      </form>
 
-      <div class="email-input">
-        <label for="email">E-mail</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="email"
-          required
-          aria-required="true"
-        />
-      </div>
+      <form class="email-input">
+        <div>
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email"
+            required
+            aria-required="true"
+          />
+        </div>
+      </form>
 
-      <div class="age-check">
-        <label for="age"
-          >Yes, I am over 13 years old<span class="age-span"> *</span></label
-        >
-        <input
-          type="checkbox"
-          name="age"
-          id="age"
-          required
-          aria-required="true"
-        />
-      </div>
+      <form class="age-check">
+        <div>
+          <label for="age"
+            >Yes, I am over 13 years old<span class="age-span"> *</span></label
+          >
+          <input
+            type="checkbox"
+            name="age"
+            id="age"
+            required
+            aria-required="true"
+          />
+        </div>
+      </form>
 
-      <div class="gender-field">
-        <input type="radio" checked name="female" id="female" />
-        <label for="female">Female</label>
+      <form class="gender-field">
+        <div>
+          <input type="radio" checked name="female" id="female" />
+          <label for="female">Female</label>
 
-        <input type="radio" name="male" id="male" />
-        <label for="male">Male</label>
+          <input type="radio" name="male" id="male" />
+          <label for="male">Male</label>
 
-        <input type="radio" name="neutral" id="neutral" />
-        <label for="neutral">Prefer not to say</label>
-      </div>
+          <input type="radio" name="neutral" id="neutral" />
+          <label for="neutral">Prefer not to say</label>
+        </div>
+      </form>
 
-      <div class="comments-field">
-        <label for="comments">Add any additional questions or comments</label>
-        <textarea
-          name="comments"
-          id="comments"
-          placeholder="comments/questions"
-        ></textarea>
-      </div>
+      <form class="comments-field">
+        <div>
+          <label for="comments">Add any additional questions or comments</label>
+          <textarea
+            name="comments"
+            id="comments"
+            placeholder="comments/questions"
+          ></textarea>
+        </div>
+      </form>
 
-      <button type="submit" class="submit-btn">
-        <a href="#">SIGN UP<span class="submit-link">&#8594;</span></a>
-      </button>
-    </section>
+      <a href="#"><button type="submit" class="submit-btn">Submit</button></a>
+    </form>
 
     <footer>
       <span>&copy; 2020 adidas America Inc.</span>
