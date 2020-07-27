@@ -1,8 +1,67 @@
 .neo {
+  position: relative;
   background-color: #000;
   height: 100vh;
   width: 100%;
-  background-image: url("../img/mens-neo.jpg");
+  background-image: url("../img/mens-neo.png");
   background-size: cover;
-  background-position: right;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .neo-product-info {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 375px;
+    background-color: rgba(0, 0, 0, 0.75);
+    @media screen and (min-width: 1024px) {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .mens-originals {
+      font-weight: 300;
+      letter-spacing: 1.5px;
+      padding: 10px 0 10px 5px;
+      color: #939393;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      position: relative;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 500;
+      padding: 0 0 10px 5px;
+      color: #fff;
+
+      span {
+        position: absolute;
+        font-size: 0.9rem;
+      }
+    }
+
+    .neo-body {
+      font-weight: 300;
+      line-height: 1.2;
+      letter-spacing: 1.2px;
+      padding: 0 0 15px 5px;
+      color: #939393;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      padding: 0 0 15px 5px;
+      color: #dfdfdf;
+    }
+
+    .neo-shop-btn {
+      font-size: 1rem;
+      outline: none;
+      border: none;
+      padding: 6px;
+      margin: 0 0 20px 5px;
+      cursor: pointer;
+      background-color: #939393;
+    }
+  }
 }
