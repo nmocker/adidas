@@ -284,7 +284,7 @@ header ul {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: #f8c843;
+	background: #cbd2e2;
 	padding: 30px 20px;
 }
 
@@ -435,11 +435,104 @@ footer span {
 	}
 }
 
+.basketball-shoes {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 30px auto 0;
+}
+
+@media screen and (min-width: 600px) {
+	.basketball-shoes {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+.basketball-shoes .bball-card {
+	display: flex;
+	background-color: #ebeff1;
+	margin-bottom: 25px;
+}
+
+@media screen and (min-width: 600px) {
+	.basketball-shoes .bball-card {
+		width: 49%;
+	}
+	.basketball-shoes .bball-card:first-child, .basketball-shoes .bball-card:nth-child(3) {
+		margin-right: 10px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.basketball-shoes .bball-card {
+		width: 24%;
+		margin-right: 10px;
+	}
+	.basketball-shoes .bball-card:last-child {
+		margin-right: 0;
+	}
+}
+
+.basketball-shoes .bball-card .bball-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+@media screen and (min-width: 600px) {
+	.basketball-shoes .bball-card .bball-section {
+		min-height: 150px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.basketball-shoes .bball-card .bball-section {
+		flex-direction: column;
+		align-items: center;
+		min-height: 200px;
+	}
+}
+
+.basketball-shoes .bball-card img {
+	width: 35%;
+}
+
+@media screen and (min-width: 600px) {
+	.basketball-shoes .bball-card img {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.basketball-shoes .bball-card img {
+		width: 65%;
+	}
+}
+
+.basketball-shoes .bball-card span {
+	font-size: 0.9375rem;
+	font-weight: 400;
+	letter-spacing: 1.1px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	text-align: right;
+	color: #000;
+	padding-bottom: 10px;
+}
+
+@media screen and (min-width: 600px) {
+	.basketball-shoes .bball-card span {
+		padding-right: 10px;
+	}
+}
+
 .new-collection {
 	display: flex;
 	flex-direction: column;
 	width: 90%;
-	margin: 30px auto;
+	margin: 0 auto 30px;
 }
 
 @media screen and (min-width: 1024px) {
