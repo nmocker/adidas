@@ -56,7 +56,6 @@ header {
 
   .flex-nav {
     position: relative;
-    // display: flex;
 
     &.showing {
       position: absolute;
@@ -174,6 +173,13 @@ header {
     border: none;
     outline: none;
     cursor: pointer;
+  }
+  @media screen and (min-width: 1024px) {
+    .shop-now-btn:hover {
+      animation: 1s ease-in-out;
+      transform: translateY(-3px);
+      box-shadow: 0px 5px 12px -4px rgba(0, 0, 0, 0.75);
+    }
   }
 }
 

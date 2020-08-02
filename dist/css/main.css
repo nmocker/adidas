@@ -320,6 +320,16 @@ header ul {
 	cursor: pointer;
 }
 
+@media screen and (min-width: 1024px) {
+	.creators-club .shop-now-btn:hover {
+		-webkit-animation: 1s ease-in-out;
+		        animation: 1s ease-in-out;
+		-ms-transform: translateY(-3px);
+		    transform: translateY(-3px);
+		box-shadow: 0px 5px 12px -4px rgba(0, 0, 0, 0.75);
+	}
+}
+
 footer {
 	display: flex;
 	justify-content: center;
@@ -397,9 +407,10 @@ footer span {
 	color: #fff;
 	outline: none;
 	border: none;
+	font-weight: 700;
 	text-transform: uppercase;
 	cursor: pointer;
-	padding: 10px 8px;
+	padding: 15px;
 	letter-spacing: 1.2px;
 }
 
@@ -599,6 +610,16 @@ footer span {
 }
 
 @media screen and (min-width: 1024px) {
+	.new-collection .red-trefoil .red-body .view-new-btn:hover {
+		-webkit-animation: 1s ease-in-out;
+		        animation: 1s ease-in-out;
+		-ms-transform: translateY(-3px);
+		    transform: translateY(-3px);
+		box-shadow: 0px 5px 12px -4px rgba(0, 0, 0, 0.75);
+	}
+}
+
+@media screen and (min-width: 1024px) {
 	.new-collection .bg-img {
 		background-image: url("../img/red-shoe.png");
 		background-repeat: no-repeat;
@@ -707,8 +728,14 @@ footer span {
 	margin: 30px 0;
 }
 
-.ivypark-hero .adidas-bars {
+.ivypark-hero .adidas-lines {
+	position: relative;
+}
+
+.ivypark-hero .adidas-lines .bar {
 	background-color: #ff5c3a;
+	width: 100vw;
+	height: 10px;
 }
 
 .form-area {

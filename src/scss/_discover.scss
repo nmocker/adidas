@@ -20,8 +20,14 @@
     margin: 30px 0;
   }
 
-  .adidas-bars {
-    background-color: #ff5c3a;
+  .adidas-lines {
+    position: relative;
+
+    .bar {
+      background-color: #ff5c3a;
+      width: 100vw;
+      height: 10px;
+    }
   }
 }
 
