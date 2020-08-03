@@ -4,7 +4,7 @@
   height: 100vh;
   width: 100%;
   background-image: url("../img/mens-neo.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -62,12 +62,21 @@
 
     .neo-shop-btn {
       font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 1.2px;
       outline: none;
       border: none;
-      padding: 6px;
+      padding: 15px;
       margin: 0 0 20px 15px;
       cursor: pointer;
       background-color: #939393;
+    }
+    @media screen and (min-width: 1024px) {
+      .neo-shop-btn:hover {
+        animation: 1s ease-in-out;
+        transform: translateY(-3px);
+        box-shadow: 1px 1px 5px 5px rgba(191, 217, 22, 0.75);
+      }
     }
   }
 }

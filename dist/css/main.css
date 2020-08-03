@@ -636,7 +636,7 @@ footer span {
 	height: 100vh;
 	width: 100%;
 	background-image: url("../img/mens-neo.png");
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -699,12 +699,172 @@ footer span {
 
 .neo .neo-product-info .neo-shop-btn {
 	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 1.2px;
 	outline: none;
 	border: none;
-	padding: 6px;
+	padding: 15px;
 	margin: 0 0 20px 15px;
 	cursor: pointer;
 	background-color: #939393;
+}
+
+@media screen and (min-width: 1024px) {
+	.neo .neo-product-info .neo-shop-btn:hover {
+		-webkit-animation: 1s ease-in-out;
+		        animation: 1s ease-in-out;
+		-ms-transform: translateY(-3px);
+		    transform: translateY(-3px);
+		box-shadow: 1px 1px 5px 5px rgba(191, 217, 22, 0.75);
+	}
+}
+
+.hero {
+	position: relative;
+	background-image: url("../img/kids/hero-cropped.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 500px;
+}
+
+@media screen and (min-width: 1024px) {
+	.hero {
+		background-image: url("../img/kids/hero.jpeg");
+		background-size: contain;
+	}
+}
+
+.hero .kids-info {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	width: 260px;
+	background-color: rgba(0, 0, 0, 0.75);
+	color: #fff;
+	padding: 25px;
+	bottom: 15px;
+	left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+	.hero .kids-info {
+		top: 0;
+		height: 120px;
+	}
+}
+
+.hero .kids-info h1 {
+	font-size: 1.3rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	padding-bottom: 10px;
+}
+
+.hero .kids-info p {
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+.hero .kids-buttons {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	bottom: 10px;
+	left: 300px;
+}
+
+@media screen and (min-width: 1024px) {
+	.hero .kids-buttons {
+		left: 10px;
+		top: 190px;
+	}
+}
+
+.hero .kids-buttons .shop-kids-btn {
+	width: 150px;
+	padding: 15px;
+	margin-bottom: 15px;
+	background-color: #333;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+	.hero .kids-buttons .shop-kids-btn .shop-kids-btn:hover {
+		-webkit-animation: 1s ease-in-out;
+		        animation: 1s ease-in-out;
+		-ms-transform: translateY(-3px);
+		    transform: translateY(-3px);
+		box-shadow: 0px 5px 12px -4px rgba(0, 0, 0, 0.75);
+	}
+}
+
+.heading h1 {
+	font-size: 1.3rem;
+	font-style: italic;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 10px 0 10px 15px;
+	margin-bottom: 30px;
+}
+
+.shoe-list {
+	display: flex;
+	width: 100%;
+}
+
+.shoe-list .product-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.shoe-list a {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex: 1;
+	min-width: 250px;
+	width: 50%;
+	color: #000;
+}
+
+.shoe-list .shoe-card {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	min-width: 250px;
+	margin-bottom: 65px;
+	border: 2px solid #fff;
+}
+
+.shoe-list .shoe-card img {
+	width: 100%;
+}
+
+.shoe-list .shoe-card .adidas-type {
+	color: #767677;
+	font-weight: 300;
+	font-size: 0.9rem;
+	padding: 8px 0 10px 10px;
+}
+
+.shoe-list .shoe-card .adidas-name {
+	font-weight: 400;
+	font-size: 0.9rem;
+	padding: 0 0 8px 10px;
+}
+
+.shoe-list .shoe-card .price {
+	font-weight: 300;
+	font-size: 0.9rem;
+	padding-left: 10px;
 }
 
 .ivypark-hero {
